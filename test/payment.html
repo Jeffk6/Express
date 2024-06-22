@@ -1,0 +1,113 @@
+<div id="payment-options" style="display: none; margin-bottom: 20px">
+  <h3>Select Payment Method</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="payment-option">
+        <input
+          type="radio"
+          id="walletPayment"
+          name="paymentMethod"
+          value="Wallet"
+          checked
+        />
+        <label for="walletPayment">
+          <i class="fas fa-wallet"></i> Wallet
+        </label>
+        <div class="checkmark"></div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="payment-option">
+        <input
+          type="radio"
+          id="bankPayment"
+          name="paymentMethod"
+          value="Bank"
+        />
+        <label for="bankPayment">
+          <i class="fas fa-university"></i> Bank Transfer
+        </label>
+        <div class="checkmark"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Visa Payment Form -->
+<div id="visaPaymentForm" style="display: none; margin-bottom: 20px">
+  <h3>Visa Payment Details</h3>
+  <form>
+    <div class="form-group">
+      <label for="cardNumber">Card Number</label>
+      <input
+        type="text"
+        class="form-control"
+        id="cardNumber"
+        placeholder="Enter card number"
+      />
+    </div>
+    <div class="form-group">
+      <label for="expiryDate">Expiry Date</label>
+      <input
+        type="text"
+        class="form-control"
+        id="expiryDate"
+        placeholder="Enter expiry date"
+      />
+    </div>
+    <div class="form-group">
+      <label for="cvv">CVV</label>
+      <input
+        type="text"
+        class="form-control"
+        id="cvv"
+        placeholder="Enter CVV"
+      />
+    </div>
+  </form>
+</div>
+
+<!-- Wallet Payment Form -->
+<div id="walletPaymentForm" style="display: none; margin-bottom: 20px">
+  <h3>Wallet Payment Details</h3>
+  <form>
+    <div class="form-group">
+      <label for="walletNumber">Wallet Number</label>
+      <input
+        type="text"
+        class="form-control"
+        id="walletNumber"
+        placeholder="Enter wallet number"
+      />
+    </div>
+    <div class="form-group">
+      <label for="countryCode">Country Code</label>
+      <select class="form-select" id="countryCode">
+        <option selected>Select country code</option>
+        <option value="1">+1</option>
+        <option value="20">+20</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="phoneNumber">Phone Number</label>
+      <input
+        type="text"
+        class="form-control"
+        id="phoneNumber"
+        placeholder="Enter phone number"
+      />
+    </div>
+  </form>
+</div>
+
+<!-- Pay Now Button -->
+<div
+  class="text-center"
+  id="payNowButtonContainer"
+  style="display: none; margin-bottom: 20px"
+>
+  <button id="payNowButton" class="btn-submit" style="display: none">
+    Pay Now
+  </button>
+</div>
